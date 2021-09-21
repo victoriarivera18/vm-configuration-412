@@ -8,16 +8,16 @@ function test(){
 
 
 function installingVim(){ #VIM already installed in VM box
-	sudo apt-get update
-	sudo apt-get install vim
-	sudo apt-get install git
+	#sudo apt-get update
+	#sudo apt-get install vim
+	#sudo apt-get install git
 	
-	echo VIM installed
+	#echo VIM installed
 
 	# Make directories
-	mkdir "$HOME"/.vim
-	mkdir "$HOME"/.vim/bundle
-	mkdir "$HOME"/.vim/colors
+	#mkdir "$HOME"/.vim
+	#mkdir "$HOME"/.vim/bundle
+	#mkdir "$HOME"/.vim/colors
 	
 	
 	# Get color scheme
@@ -93,5 +93,13 @@ function installSpotifyDesktop(){
 #call all the functions here
 
 #test
+ installingVim
+ installCompilerGCC
+ installVSCODE
+ installWordPress
+ installDocEditor
+ installPDFViewer
+ installSpotifyDesktop
+ 
 
 echo Installations complete!
