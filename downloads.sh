@@ -34,6 +34,8 @@ function installCompilerGCC(){
     sudo apt install build-essential
     sudo apt-get install manpages-dev
     gcc --version
+    
+    echo gcc installed
 }
 
 function installVSCODE(){
@@ -67,18 +69,24 @@ function installWordPress(){
 	wget https://wordpress.org/latest.tar.gz
 	tar -xzvf latest.tar.gz #extract
 	#(do we need to do database connections??)
+	
+	echo wordpress installed
 }
 
 
 function installDocEditor(){ 
     sudo snap install wps-office  
     sudo snap connect wps-office:removable-media
+    
+    echo doc editor installed
 
 }
 
 function installPDFViewer(){ #okular 
     sudo apt update
     sudo apt install okular
+    
+    echo pdfviewer installed
 }
 
 function installSpotifyDesktop(){
@@ -88,6 +96,8 @@ function installSpotifyDesktop(){
 
     sudo apt-get update
     sudo apt-get install spotify-client
+    
+    echo spotify installed
 }
 
 #call all the functions here
